@@ -1,17 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
-  <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
-</head>
-    <div>
-        <h4 style="text-align: center;"> Call 832-XXX-XXXX </h4>
-        <h4 style="text-align: center;"> Email: xxxx@gmail.com</h4>
-        <p style="text-align: center;">We are available 24/7 to assist you with any questions or concerns.</p>
-    </div>
-    <div class="card" style="width: 35%; margin: 0 auto;">
-        <img class="card-img-top" src="/static/cars.jpeg" alt="Card image">
-         <img class="card-img-top" src="/static/contactus.png" alt="Card image">
-    </div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="/static/bootstrap.min.css" />
+
+  <title>Contact Us - Best Cars Dealership</title>
+</head>
+
+<body>
+  <div>
+    <!-- NAVBAR (required) -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <!-- ACTIVE LINK (required) -->
+              <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT CARD -->
+    <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 25px;">
+      <div class="banner" name="contact-header">
+        <h1>Contact Us</h1>
+        <p>
+          We are available 24/7 to assist you with any questions, service requests, or vehicle inquiries.
+        </p>
+      </div>
+
+      <div style="text-align: center; margin-top: 20px;">
+        <h4>📞 Call: +1 (832) 555-0198</h4>
+        <h4>📧 Email: support@bestcars.com</h4>
+        <h4>📍 Address: 1200 Auto Plaza Blvd, Houston, TX 77002</h4>
+        <p style="margin-top: 15px;">
+          Our team is happy to help with vehicle sales, financing, trade-ins, and service appointments.
+        </p>
+      </div>
+
+      <!-- IMAGES -->
+      <div class="card" style="width: 60%; margin: 30px auto;">
+        <img class="card-img-top" src="/static/cars.jpeg" alt="Best Cars Showroom">
+        <img class="card-img-top" src="/static/contactus.png" alt="Contact Best Cars">
+      </div>
+    </div>
+  </div>
+</body>
 </html>
